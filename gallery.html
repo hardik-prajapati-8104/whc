@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>About Us | SparkleCare Housekeeping</title>
+    <meta name="description" content="Learn about SparkleCare — a trusted housekeeping company serving homes and businesses since 2014.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+            
+            .gallery-section{
+                background:#fffaf5;
+            }
+
+            .gallery-badge{
+                display:inline-block;
+                padding:8px 18px;
+                background:rgba(255,122,0,.1);
+                color:var(--orange);
+                border-radius:50px;
+                font-weight:600;
+                margin-bottom:15px;
+            }
+
+            .gallery-title{
+                font-size:clamp(2rem,4vw,3rem);
+                font-weight:700;
+                color:#222;
+            }
+
+            .gallery-desc{
+                color:#666;
+                max-width:600px;
+                margin:auto;
+            }
+
+            .gallery-card{
+                position:relative;
+                overflow:hidden;
+                border-radius:20px;
+                background:#fff;
+                cursor:pointer;
+                box-shadow:0 10px 25px rgba(0,0,0,.08);
+            }
+
+            .gallery-card img{
+                width:100%;
+                height:260px;
+                object-fit:cover;
+                transition:.5s;
+            }
+
+            .gallery-card::before{
+                content:"";
+                position:absolute;
+                inset:0;
+                /* background:rgba(255,122,0,.75); */
+                opacity:0;
+                transition:.4s;
+                z-index:1;
+            }
+
+            .gallery-card::after{
+                content:"\F52A";
+                font-family:"bootstrap-icons";
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                color:#fff;
+                font-size:34px;
+                opacity:0;
+                transition:.4s;
+                z-index:2;
+            }
+
+            .gallery-card:hover::before,
+            .gallery-card:hover::after{
+                opacity:1;
+            }
+
+            .gallery-card:hover img{
+                transform:scale(1.1);
+            }
+
+            @media(max-width:767px){
+
+                .gallery-section{
+                    padding-top:30px !important;
+                    padding-bottom:30px !important;
+                }
+
+                .gallery-card{
+                    border-radius:14px;
+                }
+
+                .gallery-card img{
+                    height:160px;
+                }
+
+                .gallery-title{
+                    font-size:28px;
+                }
+            }
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html"> 
+        Work<span>Home</span>Company
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" data-page="index.html" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="services.html" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="booking.html" href="booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="about.html" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="contact.html" href="contact.html">Contact Us</a></li>
+            <li class="nav-item ms-lg-3"><a class="btn btn-orange" href="booking.html"><i class="bi bi-calendar2-check me-1"></i> Book Now</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Work Home Company</h1>
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active text-white">Gallery</li>
+            </ol>
+        </div>
+    </section>
+
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery-section py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="gallery-badge">Our Work</span>
+                <h2 class="gallery-title">Cleaning Gallery</h2>
+                <p class="gallery-desc">
+                    Explore our professional cleaning services and see the difference we make.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-card">
+                        <img src="images/s1.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-card">
+                        <img src="images/s2.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-card">
+                        <img src="images/s3.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-card">
+                        <img src="images/s4.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-card">
+                        <img src="images/s5.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-card">
+                        <img src="images/s6.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-card">
+                        <img src="images\s1.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-card">
+                        <img src="images\s2.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <nav class="mobile-nav d-lg-none">
+    <a href="index.html" data-page="index.html"><i class="bi bi-house-door"></i><span>Home</span></a>
+    <a href="services.html" data-page="services.html"><i class="bi bi-grid"></i><span>Categories</span></a>
+    <a href="booking.html" class="book" data-page="booking.html"><i class="bi bi-calendar2-plus"></i><span>Book</span></a>
+    <a href="about.html" data-page="about.html"><i class="bi bi-info-circle"></i><span>About</span></a>
+    <a href="setting.html" data-page="contact.html"><i class="bi bi-gear"></i><span>Settings</span></a>
+    </nav>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="brand">Sparkle<span>Care</span></div>
+            <p class="mt-3">Premium housekeeping & cleaning services for homes and businesses. Trusted by 10,000+ happy customers.</p>
+            <div class="social mt-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="col-6 col-lg-2">
+            <h6>Company</h6>
+            <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+            <h6>Services</h6>
+            <ul class="list-unstyled">
+            <li><a href="services.html">Deep Cleaning</a></li>
+            <li><a href="services.html">Apartment Cleaning</a></li>
+            <li><a href="services.html">Commercial Cleaning</a></li>
+            <li><a href="services.html">Carpet & Sofa</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <h6>Contact</h6>
+            <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt text-orange me-2"></i>22 Maple Street, NY 10001</li>
+            <li><i class="bi bi-telephone text-orange me-2"></i>(555) 234-7890</li>
+            <li><i class="bi bi-envelope text-orange me-2"></i>hello@sparklecare.com</li>
+            </ul>
+        </div>
+        </div>
+        <div class="copyright">© 2026 SparkleCare. All rights reserved.</div>
+    </div>
+
+    </footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

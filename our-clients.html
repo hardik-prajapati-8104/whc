@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>About Us | SparkleCare Housekeeping</title>
+    <meta name="description" content="Learn about SparkleCare — a trusted housekeeping company serving homes and businesses since 2014.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+            
+            .clients-page{
+                background:#fffaf5;
+                min-height:100vh;
+            }
+
+            .client-badge{
+                display:inline-block;
+                padding:8px 18px;
+                border-radius:50px;
+                background:rgba(255,122,0,.12);
+                color:var(--orange);
+                font-weight:600;
+                margin-bottom:15px;
+            }
+
+            .client-title{
+                font-size:clamp(2rem,4vw,3.5rem);
+                font-weight:700;
+                color:#222;
+            }
+
+            .client-subtitle{
+                color:#666;
+                max-width:700px;
+                margin:auto;
+            }
+
+            .stat-card{
+                background:#fff;
+                padding:25px;
+                border-radius:20px;
+                text-align:center;
+                box-shadow:0 10px 25px rgba(0,0,0,.06);
+                transition:.3s;
+            }
+
+            .stat-card:hover{
+                transform:translateY(-5px);
+            }
+
+            .stat-card h2{
+                color:var(--orange);
+                font-weight:700;
+                margin-bottom:5px;
+            }
+
+            .stat-card p{
+                margin:0;
+                color:#666;
+            }
+
+            .client-card{
+                background:#fff;
+                border-radius:20px;
+                padding:25px;
+                text-align:center;
+                box-shadow:0 10px 25px rgba(0,0,0,.06);
+                transition:.3s;
+                height:100%;
+            }
+
+            .client-card:hover{
+                transform:translateY(-8px);
+                border:1px solid rgba(255,122,0,.3);
+            }
+
+            .client-card img{
+                width:100%;
+                max-width:120px;
+                height:80px;
+                object-fit:contain;
+                margin-bottom:15px;
+            }
+
+            .client-card h6{
+                font-weight:600;
+                margin-bottom:5px;
+            }
+
+            .client-card small{
+                color:#777;
+            }
+
+            .client-cta{
+                background:linear-gradient(135deg,#ff7a00,#ff9a2f);
+                padding:50px 30px;
+                border-radius:25px;
+                text-align:center;
+                color:#fff;
+            }
+
+            .client-cta h3{
+                font-weight:700;
+            }
+
+            .client-cta p{
+                opacity:.9;
+            }
+
+            .btn-orange{
+                background:#fff;
+                color:#ff7a00;
+                font-weight:600;
+                border-radius:12px;
+                padding:12px 25px;
+            }
+
+            .btn-orange:hover{
+                background:#fff;
+                color:#ff7a00;
+            }
+
+            @media(max-width:767px){
+
+                .clients-page{
+                    padding-top:30px !important;
+                    padding-bottom:30px !important;
+                }
+
+                .client-card{
+                    padding:15px;
+                    border-radius:15px;
+                }
+
+                .client-card img{ 
+                    height:200px;
+                    margin-bottom: 0px;
+                }
+
+                .client-cta{
+                    padding:30px 20px;
+                    border-radius:18px;
+                }
+
+                .client-title{
+                    font-size:2rem;
+                }
+            }
+    </style>
+ 
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html"> 
+            Work<span>Home</span>Company
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" data-page="index.html" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="services.html" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="booking.html" href="booking.html">Booking</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="about.html" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="contact.html" href="contact.html">Contact Us</a></li>
+                <li class="nav-item ms-lg-3"><a class="btn btn-orange" href="booking.html"><i class="bi bi-calendar2-check me-1"></i> Book Now</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Work Home Company</h1>
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active text-white">Our Clients</li>
+            </ol>
+        </div>
+    </section>
+ 
+    <section class="clients-page py-5">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <span class="client-badge">Trusted Partners</span>
+                <h1 class="client-title">Our Valued Clients</h1>
+                <p class="client-subtitle">
+                    We proudly serve homes, offices, hotels, restaurants, and businesses with exceptional cleaning services.
+                </p>
+            </div>
+
+            <!-- Stats -->
+            <div class="row g-4 mb-5">
+
+                <div class="col-6 col-md-3">
+                    <div class="stat-card">
+                        <h2>500+</h2>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="stat-card">
+                        <h2>1000+</h2>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="stat-card">
+                        <h2>4.9★</h2>
+                        <p>Customer Rating</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="stat-card">
+                        <h2>10+</h2>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Clients Grid -->
+            <div class="row g-4">
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="images/clients/binghati.png" alt=""> 
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="images/clients/bnw.png" alt=""> 
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="images/clients/damac.png" alt=""> 
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="images/clients/danube.png" alt=""> 
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="images/clients/Meraas.png" alt=""> 
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="images/clients/nashama.png" alt=""> 
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="images/clients/octa.png" alt=""> 
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="images/clients/ellingtone.png" alt=""> 
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="client-cta mt-5">
+                <h3>Join Our Growing Family of Happy Clients</h3>
+                <p>Experience premium cleaning services trusted by hundreds of customers.</p>
+                <a href="booking.html" class="btn btn-orange">
+                    Book Your Service
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <nav class="mobile-nav d-lg-none">
+        <a href="index.html" data-page="index.html"><i class="bi bi-house-door"></i><span>Home</span></a>
+        <a href="services.html" data-page="services.html"><i class="bi bi-grid"></i><span>Categories</span></a>
+        <a href="booking.html" class="book" data-page="booking.html"><i class="bi bi-calendar2-plus"></i><span>Book</span></a>
+        <a href="about.html" data-page="about.html"><i class="bi bi-info-circle"></i><span>About</span></a>
+        <a href="setting.html" data-page="contact.html"><i class="bi bi-gear"></i><span>Settings</span></a>
+    </nav>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="brand">Sparkle<span>Care</span></div>
+                <p class="mt-3">Premium housekeeping & cleaning services for homes and businesses. Trusted by 10,000+ happy customers.</p>
+                <div class="social mt-3">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6>Company</h6>
+                <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h6>Services</h6>
+                <ul class="list-unstyled">
+                <li><a href="services.html">Deep Cleaning</a></li>
+                <li><a href="services.html">Apartment Cleaning</a></li>
+                <li><a href="services.html">Commercial Cleaning</a></li>
+                <li><a href="services.html">Carpet & Sofa</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h6>Contact</h6>
+                <ul class="list-unstyled">
+                <li><i class="bi bi-geo-alt text-orange me-2"></i>22 Maple Street, NY 10001</li>
+                <li><i class="bi bi-telephone text-orange me-2"></i>(555) 234-7890</li>
+                <li><i class="bi bi-envelope text-orange me-2"></i>hello@sparklecare.com</li>
+                </ul>
+            </div>
+            </div>
+            <div class="copyright">© 2026 SparkleCare. All rights reserved.</div>
+        </div> 
+    </footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
