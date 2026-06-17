@@ -366,6 +366,10 @@ section{padding:80px 0}
         right:15px;
         bottom:85px; /* Above Bottom Navigation */
     }
+
+    .category-sec{
+        padding-top: 10px;
+    }
 }
 
 .scroll-top-btn{
