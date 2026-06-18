@@ -244,9 +244,9 @@
         <div class="overlay"></div>
 
         <div class="container position-relative"> 
-            <h1>Register</h1>
+            <h1 data-aos="fade-up">Register</h1>
 
-            <ol class="breadcrumb justify-content-center mb-0">
+            <ol class="breadcrumb justify-content-center mb-0" data-aos="fade-up">
                 <li class="breadcrumb-item">
                     <a href="index.html">
                         <i class="bi bi-house-door-fill me-1"></i> Home
@@ -273,14 +273,14 @@
                                 <i class="bi bi-person-plus-fill"></i>
                             </div>
 
-                            <h2 class="register-title">Create Account</h2>
+                            <h2 class="register-title" data-aos="fade-up">Create Account</h2>
 
-                            <p class="register-subtitle">
+                            <p class="register-subtitle" data-aos="fade-up">
                                 Join us today and book professional cleaning services.
                             </p>
                         </div>
 
-                        <form>
+                        <form data-aos="fade-up">
 
                             <div class="row">
 
@@ -378,16 +378,16 @@
 
                         </form>
 
-                        <div class="divider">
+                        <div class="divider" data-aos="fade-up">
                             <span>OR</span>
                         </div>
 
-                        <button class="btn social-btn">
+                        <button class="btn social-btn" data-aos="fade-up">
                             <i class="bi bi-google"></i>
                             Continue with Google
                         </button>
 
-                        <p class="login-link">
+                        <p class="login-link" data-aos="fade-up">
                             Already have an account?
                             <a href="login.html">Login Now</a>
                         </p>
@@ -457,18 +457,27 @@
         <i class="bi bi-arrow-up"></i>
     </button>
 
-    <script>
-        function togglePassword(id) {
-            const input = document.getElementById(id);
 
-            if (input.type === "password") {
-                input.type = "text";
-            } else {
-                input.type = "password";
-            }
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 1000,
+    offset: 100,
+    once: true,
+    easing: 'ease-in-out'
+});
+</script>
+<script>
+    function togglePassword(id) {
+        const input = document.getElementById(id);
+
+        if (input.type === "password") {
+            input.type = "text";
+        } else {
+            input.type = "password";
         }
-    </script>
-
+    }
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>

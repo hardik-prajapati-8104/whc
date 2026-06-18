@@ -183,9 +183,9 @@
         <div class="overlay"></div>
 
         <div class="container position-relative"> 
-            <h1>Client Reviews</h1>
+            <h1 data-aos="fade-up">Client Reviews</h1>
 
-            <ol class="breadcrumb justify-content-center mb-0">
+            <ol class="breadcrumb justify-content-center mb-0" data-aos="fade-up">
                 <li class="breadcrumb-item">
                     <a href="index.html">
                         <i class="bi bi-house-door-fill me-1"></i> Home
@@ -204,9 +204,9 @@
 
             <!-- Header -->
             <div class="text-center mb-5">
-                <span class="review-badge">Customer Testimonials</span>
-                <h1 class="review-title">What Our Clients Say</h1>
-                <p class="review-subtitle">
+                <span class="review-badge" data-aos="fade-up">Customer Testimonials</span>
+                <h1 class="review-title" data-aos="fade-up">What Our Clients Say</h1>
+                <p class="review-subtitle" data-aos="fade-up">
                     Discover why hundreds of customers trust us for their cleaning and housekeeping needs.
                 </p>
             </div>
@@ -214,28 +214,28 @@
             <!-- Review Stats -->
             <div class="row g-4 mb-5">
 
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" data-aos="fade-up">
                     <div class="review-stat-card">
                         <h2>4.9★</h2>
                         <p>Average Rating</p>
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" data-aos="fade-up">
                     <div class="review-stat-card">
                         <h2>500+</h2>
                         <p>Happy Clients</p>
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" data-aos="fade-up">
                     <div class="review-stat-card">
                         <h2>98%</h2>
                         <p>Satisfaction Rate</p>
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" data-aos="fade-up">
                     <div class="review-stat-card">
                         <h2>1000+</h2>
                         <p>Services Completed</p>
@@ -247,7 +247,7 @@
             <!-- Reviews -->
             <div class="row g-4">
 
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="review-card">
                         <div class="review-top">
                             <img src="images/testimonial/team-1.jpg" alt="">
@@ -268,7 +268,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="review-card">
                         <div class="review-top">
                             <img src="images/testimonial/team-2.jpg" alt="">
@@ -288,7 +288,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="review-card">
                         <div class="review-top">
                             <img src="images/testimonial/team-3.jpg" alt="">
@@ -308,7 +308,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="review-card">
                         <div class="review-top">
                             <img src="images/testimonial/team-4.jpg" alt="">
@@ -328,7 +328,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="review-card">
                         <div class="review-top">
                             <img src="images/testimonial/team-1.jpg" alt="">
@@ -348,7 +348,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="review-card">
                         <div class="review-top">
                             <img src="images/testimonial/team-2.jpg" alt="">
@@ -371,7 +371,7 @@
             </div>
 
             <!-- CTA -->
-            <div class="review-cta mt-5">
+            <div class="review-cta mt-5" data-aos="fade-up">
                 <h3>Ready for a Spotless Space?</h3>
                 <p>
                     Join hundreds of satisfied customers and book your cleaning service today.
@@ -441,6 +441,15 @@
         <i class="bi bi-arrow-up"></i>
     </button>
 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> 
+<script>
+AOS.init({
+    duration: 1000,
+    offset: 100,
+    once: true,
+    easing: 'ease-in-out'
+});
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>
