@@ -148,44 +148,43 @@ a{text-decoration:none}
     }
 
     .search-bar{
-        padding:15px;
-        border-radius:15px;
-        gap:12px;
+        display:flex;
+        flex-wrap:nowrap;
+        align-items:center;
+        gap:10px;
+        padding:10px;
     }
 
-    .search-bar > div,
-    .search-bar select,
-    .search-bar input[type="date"],
-    .search-bar button{
-        width:100% !important;
-        max-width:100% !important;
-        flex:0 0 100%;
-    }
-
-    .search-bar .divider{
-        display:none !important;
-    }
-
-    .search-bar .form-control,
-    .search-bar .form-select{
-        min-height:48px;
+    .search-bar .search-input{
+        flex:1;
+        display:flex;
+        align-items:center;
         border:1px solid #eee;
         border-radius:10px;
-        padding:0 15px;
+        min-height:45px;
+        padding:0 12px;
+    }
+
+    .search-bar .form-control{
+        border:none;
+        box-shadow:none;
+        min-height:auto;
+        padding:0;
     }
 
     .search-bar .btn-orange{
-        width:100%;
-        height:50px;
+        flex:0 0 110px;
+        width:110px;
+        height:45px;
         border-radius:10px;
-        font-size:16px;
-        font-weight:600;
+        white-space:nowrap;
     }
 
-    .search-bar .d-flex{
-        border:1px solid #eee;
-        border-radius:10px;
-        min-height:48px;
+    /* Hide unwanted fields on mobile */
+    .search-bar .form-select,
+    .search-bar input[type="date"],
+    .search-bar .divider{
+        display:none;
     }
 }
 /* Mobile Hero Height */

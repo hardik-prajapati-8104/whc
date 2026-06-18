@@ -44,8 +44,10 @@
 
 <!-- HERO -->
 <section class="p-0" style="padding:0!important">
+
   <div class="swiper hero-swiper">
     <div class="swiper-wrapper">
+
       <div class="swiper-slide hero-slide" style="background-image:url(images/hero1.jpg)">
         <div class="container hero-content">
           <div class="col-lg-8">
@@ -55,6 +57,7 @@
           </div>
         </div>
       </div>
+
       <div class="swiper-slide hero-slide" style="background-image:url(images/hero2.jpg)">
         <div class="container hero-content">
           <div class="col-lg-8">
@@ -64,6 +67,7 @@
           </div>
         </div>
       </div>
+
       <div class="swiper-slide hero-slide" style="background-image:url(images/hero3.jpg)">
         <div class="container hero-content">
           <div class="col-lg-8">
@@ -73,6 +77,7 @@
           </div>
         </div>
       </div>
+
     </div>
     <div class="swiper-pagination"></div>
   </div>
@@ -80,25 +85,18 @@
   <!-- Search bar overlay -->
   <div class="container" style="margin-top:-60px;position:relative;z-index:5">
     <form class="search-bar">
-      <div class="flex-grow-1 d-flex align-items-center px-3">
+
+    <div class="search-input">
         <i class="bi bi-search text-orange me-2"></i>
-        <input class="form-control" placeholder="What do you need cleaned?">
-      </div>
-      <div class="divider d-none d-md-block"></div>
-      <select class="form-select flex-grow-1" style="max-width:220px">
-        <option value="">Deep Cleaning</option>
-        <option value="">Apartment Cleaning</option>
-        <option value="">Commercial Cleaning</option>
-        <option value="">Carpet & Sofa</option>
-        <option value="">Invisible Safety Grills</option>
-        <option value="">Premium Mosquito Protection Systems</option>
-        <option value="">Bird Control Netting Solutions</option>
-        <option value="">Anti-Bird Spike Protection Systems</option>
-        <option value="">Professional Sports & Cricket Netting Solutions</option>
-      </select>
-      <div class="divider d-none d-md-block"></div>
-      <input type="date" class="form-control flex-grow-1" style="max-width:200px">
-      <button class="btn btn-orange"><i class="bi bi-search me-1"></i> Search</button>
+        <input class="form-control"
+               placeholder="Search Your Services">
+    </div>
+
+    <button class="btn btn-orange">
+        <i class="bi bi-search me-1"></i>
+        <span class="d-none d-md-none">Search</span>
+    </button>
+
     </form>
   </div>
 
@@ -110,6 +108,7 @@
           <p>Protection & Safety Systems</p>
       </div>
   </div>
+  
 </section>
 
   <style>
@@ -161,7 +160,7 @@
   </style>
  
 <!-- CATEGORIES -->
-<section class="category-sec">
+<section class="category-sec d-none">
   <div class="container">
     <div class="text-center">
       <span class="eyebrow">Categories</span>
@@ -178,6 +177,224 @@
     </div>
   </div>
 </section>
+
+<!-- service section start-->
+<section class="category-section py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="category-badge">Our Services</span>
+            <h2 class="section-title-services">
+                Explore Our Professional Solutions
+            </h2>
+            <p class="section-subtitle-sevices">
+                Premium safety, protection and cleaning services for homes,
+                offices and commercial spaces.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-category-card active">
+                    <div class="service-icon">
+                        <i class="bi bi-trophy"></i>
+                    </div>
+                    <h6>Sports & Cricket Netting</h6>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-category-card">
+                    <div class="service-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h6>Bird Spikes</h6>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-category-card">
+                    <div class="service-icon">
+                        <i class="bi bi-grid-3x3-gap"></i>
+                    </div>
+                    <h6>Bird Netting</h6>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-category-card">
+                    <div class="service-icon">
+                        <i class="bi bi-bug"></i>
+                    </div>
+                    <h6>Mosquito Protection</h6>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-category-card">
+                    <div class="service-icon">
+                        <i class="bi bi-border-all"></i>
+                    </div>
+                    <h6>Invisible Grills</h6>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-category-card">
+                    <div class="service-icon">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <h6>Office Cleaning</h6>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-category-card">
+                    <div class="service-icon">
+                        <i class="bi bi-stars"></i>
+                    </div>
+                    <h6>Deep Cleaning</h6>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-category-card">
+                    <div class="service-icon">
+                        <i class="bi bi-house-heart"></i>
+                    </div>
+                    <h6>Home Cleaning</h6>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<style>
+  .category-section{
+    background:#fff;
+  }
+
+  .category-badge{
+      display:inline-block;
+      padding:8px 18px;
+      border-radius:50px;
+      background:var(--orange-soft);
+      color:var(--orange);
+      font-weight:600;
+      margin-bottom:15px;
+  }
+
+  .section-title-services{
+      font-size:clamp(2rem,4vw,3rem);
+      font-weight:800;
+      color:#222;
+  }
+
+  .section-subtitle-services{
+      color:#777;
+      max-width:650px;
+      margin:auto;
+  }
+
+  .service-category-card{
+      position:relative;
+      background:#fff;
+      border-radius:20px;
+      padding:30px 20px;
+      text-align:center;
+      cursor:pointer;
+      overflow:hidden;
+      transition:.4s ease;
+      border:1px solid #f2f2f2;
+      box-shadow:0 10px 30px rgba(0,0,0,.06);
+      height:100%;
+  }
+
+  .service-category-card::before{
+      content:'';
+      position:absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height:4px;
+      background:var(--orange);
+      transform:scaleX(0);
+      transition:.4s;
+  }
+
+  .service-category-card:hover::before{
+      transform:scaleX(1);
+  }
+
+  .service-category-card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 20px 40px rgba(255,122,0,.18);
+  }
+
+  .service-icon{
+      width:80px;
+      height:80px;
+      margin:auto;
+      margin-bottom:18px;
+      border-radius:50%;
+      background:var(--orange-soft);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transition:.4s;
+  }
+
+  .service-icon i{
+      font-size:32px;
+      color:var(--orange);
+  }
+
+  .service-category-card:hover .service-icon{
+      background:var(--orange);
+      transform:rotateY(180deg);
+  }
+
+  .service-category-card:hover .service-icon i{
+      color:#fff;
+      transform:rotateY(-180deg);
+  }
+
+  .service-category-card h6{
+      font-size:16px;
+      font-weight:700;
+      margin:0;
+      line-height:1.5;
+  }
+  
+  .active .service-icon i{
+      color:var(--orange);
+  }
+
+  @media(max-width:767px){
+
+      .service-category-card{
+          padding:20px 15px;
+          border-radius:16px;
+      }
+
+      .service-icon{
+          width:60px;
+          height:60px;
+      }
+
+      .service-icon i{
+          font-size:24px;
+      }
+
+      .service-category-card h6{
+          font-size:13px;
+      }
+  }
+</style>
+<!-- service section end -->
 
 <!-- POPULAR SERVICES SWIPER -->
 <section class="bg-light">
