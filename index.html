@@ -84,22 +84,23 @@
   </div>
 
   <!-- Search bar overlay -->
-  <div class="container" style="margin-top:-60px;position:relative;z-index:5">
+  <div class="container search-wrapper">
     <form class="search-bar">
 
-    <div class="search-input">
-        <i class="bi bi-search text-orange me-2"></i>
-        <input class="form-control"
-               placeholder="Search Your Services">
-    </div>
+        <div class="search-input">
+            <i class="bi bi-search"></i>
+            <input type="text"
+                   class="form-control"
+                   placeholder="Search Your Services">
+        </div>
 
-    <button class="btn btn-orange">
-        <i class="bi bi-search me-1"></i>
-        <span class="d-none d-md-none">Search</span>
-    </button>
+        <button type="submit" class="btn btn-orange search-btn">
+            <i class="bi bi-search"></i>
+            <!-- <span>Search</span> -->
+        </button>
 
     </form>
-  </div>
+</div> 
 
   <!-- Company Logo -->
   <div class="container">
@@ -112,54 +113,53 @@
   
 </section>
 
-  <style>
-    
+<style>
+
+.company-logo-section{
+    text-align:center;
+    margin:25px 0 15px;
+}
+
+.company-logo-section img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:50%;
+    padding:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    border:3px solid #ff7a00;
+}
+
+.company-logo-section h5{
+    margin-top:12px;
+    margin-bottom:4px;
+    font-weight:700;
+    color:#222;
+}
+
+.company-logo-section p{
+    margin:0;
+    color:#777;
+    font-size:14px;
+}
+
+@media(min-width:992px){
+
     .company-logo-section{
-      text-align:center;
-      margin:25px 0 15px;
+        margin:40px 0 25px;
     }
 
     .company-logo-section img{
-        width:90px;
-        height:90px;
-        object-fit:contain;
-        background:#fff;
-        border-radius:50%;
-        padding:10px;
-        box-shadow:0 10px 25px rgba(0,0,0,.12);
-        border:3px solid #ff7a00;
+        width:120px;
+        height:120px;
     }
 
     .company-logo-section h5{
-        margin-top:12px;
-        margin-bottom:4px;
-        font-weight:700;
-        color:#222;
+        font-size:24px;
     }
-
-    .company-logo-section p{
-        margin:0;
-        color:#777;
-        font-size:14px;
-    }
-
-    @media(min-width:992px){
-
-        .company-logo-section{
-            margin:40px 0 25px;
-        }
-
-        .company-logo-section img{
-            width:120px;
-            height:120px;
-        }
-
-        .company-logo-section h5{
-            font-size:24px;
-        }
-    }
-  </style>
-
+}
+</style>
 
 <section class="about-home py-5">
     <div class="container">
