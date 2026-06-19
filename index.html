@@ -653,6 +653,47 @@
   }
 </style>
 <!-- service section end -->
+ 
+<!-- POPULAR SERVICES SWIPER -->
+<section class="bg-light">
+  <div class="container">
+    <div class="text-center">
+      <span class="eyebrow" data-aos="fade-up">Popular Services</span>
+      <h2 class="section-title" data-aos="fade-up">Most Booked This Month</h2>
+      <p class="section-sub" data-aos="fade-up">Trusted favorites — chosen by thousands of customers.</p>
+    </div>
+    <div class="swiper services-swiper" data-aos="fade-up">
+      <div class="swiper-wrapper pb-5">
+        <div class="swiper-slide"><div class="service-card"><div class="img" style="background-image:url(images/s1.jpg)"></div><div class="body"><h5>Deep Cleaning</h5><p class="text-muted small">Top-to-bottom intensive clean for every room.</p><div class="d-flex justify-content-between align-items-center"><span class="price">From $89</span><a href="booking.html" class="btn btn-sm btn-outline-orange">Book</a></div></div></div></div>
+        <div class="swiper-slide"><div class="service-card"><div class="img" style="background-image:url(images/s2.jpg)"></div><div class="body"><h5>Apartment Cleaning</h5><p class="text-muted small">Regular weekly or bi-weekly tidy and clean.</p><div class="d-flex justify-content-between align-items-center"><span class="price">From $59</span><a href="booking.html" class="btn btn-sm btn-outline-orange">Book</a></div></div></div></div>
+        <div class="swiper-slide"><div class="service-card"><div class="img" style="background-image:url(images/s3.jpg)"></div><div class="body"><h5>Commercial Cleaning</h5><p class="text-muted small">Offices, shops and facilities, on your schedule.</p><div class="d-flex justify-content-between align-items-center"><span class="price">From $149</span><a href="booking.html" class="btn btn-sm btn-outline-orange">Book</a></div></div></div></div>
+        <div class="swiper-slide"><div class="service-card"><div class="img" style="background-image:url(images/s4.jpg)"></div><div class="body"><h5>Carpet & Sofa</h5><p class="text-muted small">Steam-cleaning that lifts deep stains & odors.</p><div class="d-flex justify-content-between align-items-center"><span class="price">From $79</span><a href="booking.html" class="btn btn-sm btn-outline-orange">Book</a></div></div></div></div>
+        <div class="swiper-slide"><div class="service-card"><div class="img" style="background-image:url(images/s5.jpg)"></div><div class="body"><h5>Window Cleaning</h5><p class="text-muted small">Crystal-clear interior and exterior windows.</p><div class="d-flex justify-content-between align-items-center"><span class="price">From $69</span><a href="booking.html" class="btn btn-sm btn-outline-orange">Book</a></div></div></div></div>
+        <div class="swiper-slide"><div class="service-card"><div class="img" style="background-image:url(images/s6.jpg)"></div><div class="body"><h5>Move In / Move Out</h5><p class="text-muted small">Get your security deposit back, guaranteed.</p><div class="d-flex justify-content-between align-items-center"><span class="price">From $129</span><a href="booking.html" class="btn btn-sm btn-outline-orange">Book</a></div></div></div></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="d-none">
+  <div class="container">
+    <div class="text-center">
+      <span class="eyebrow" data-aos="fade-up">Why Work Home Company</span>
+      <h2 class="section-title" data-aos="fade-up">Built on Trust & Quality</h2>
+      <p class="section-sub" data-aos="fade-up">Background-checked pros, transparent pricing, and a happiness guarantee.</p>
+    </div>
+    <div class="row g-4" data-aos="fade-up">
+      <div class="col-md-6 col-lg-3"><div class="why-card"><div class="icon"><i class="bi bi-shield-check"></i></div><h5>Vetted Pros</h5><p class="text-muted mb-0">Every cleaner is interviewed, trained and background-checked.</p></div></div>
+      <div class="col-md-6 col-lg-3"><div class="why-card"><div class="icon"><i class="bi bi-tree-fill"></i></div><h5>Eco Products</h5><p class="text-muted mb-0">Non-toxic, family-safe supplies brought to every visit.</p></div></div>
+      <div class="col-md-6 col-lg-3"><div class="why-card"><div class="icon"><i class="bi bi-currency-dollar"></i></div><h5>Flat Pricing</h5><p class="text-muted mb-0">No surprises. See the price before you book.</p></div></div>
+      <div class="col-md-6 col-lg-3"><div class="why-card"><div class="icon"><i class="bi bi-emoji-smile"></i></div><h5>100% Guarantee</h5><p class="text-muted mb-0">Not happy? We will re-clean for free.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section Starts -->
 <section class="why-choose-us py-5">
     <div class="container">
 
@@ -786,168 +827,129 @@
 </section>
 
 <style>
- 
-.why-choose-us{
-    background:#fffaf5;
-    overflow:hidden;
-}
+    
+    .why-choose-us{
+        background:#fffaf5;
+        overflow:hidden;
+    }
 
-.section-badge{
-    display:inline-block;
-    background:var(--orange-soft);
-    color:var(--orange);
-    padding:8px 18px;
-    border-radius:50px;
-    font-weight:600;
-    margin-bottom:15px;
-}
+    .section-badge{
+        display:inline-block;
+        background:var(--orange-soft);
+        color:var(--orange);
+        padding:8px 18px;
+        border-radius:50px;
+        font-weight:600;
+        margin-bottom:15px;
+    }
 
-.section-title{
-    font-size:clamp(2rem,4vw,3rem);
-    font-weight:800;
-    color:#222;
-}
+    .section-title{
+        font-size:clamp(2rem,4vw,3rem);
+        font-weight:800;
+        color:#222;
+    }
 
-.section-subtitle{
-    max-width:700px;
-    margin:auto;
-    color:#666;
-}
-
-.choose-card{
-    background:#fff;
-    border-radius:20px;
-    padding:30px 25px;
-    text-align:center;
-    height:100%;
-    transition:.4s;
-    box-shadow:0 10px 30px rgba(0,0,0,.06);
-    border:1px solid #f5f5f5;
-}
-
-.choose-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 40px rgba(255,122,0,.15);
-}
-
-.choose-icon{
-    width:80px;
-    height:80px;
-    margin:0 auto 20px;
-    border-radius:50%;
-    background:var(--orange-soft);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    transition:.4s;
-}
-
-.choose-icon i{
-    font-size:32px;
-    color:var(--orange);
-}
-
-.choose-card:hover .choose-icon{
-    background:var(--orange);
-}
-
-.choose-card:hover .choose-icon i{
-    color:#fff;
-}
-
-.choose-card h5{
-    font-weight:700;
-    margin-bottom:15px;
-}
-
-.choose-card p{
-    color:#666;
-    margin:0;
-}
-
-.stat-box{
-    background:#fff;
-    border-radius:18px;
-    padding:25px;
-    box-shadow:0 10px 25px rgba(0,0,0,.05);
-}
-
-.stat-box h3{
-    color:var(--orange);
-    font-size:2rem;
-    font-weight:800;
-    margin-bottom:5px;
-}
-
-.stat-box span{
-    color:#666;
-}
-
-/* Mobile */
-@media(max-width:767px){
+    .section-subtitle{
+        max-width:700px;
+        margin:auto;
+        color:#666;
+    }
 
     .choose-card{
-        padding:25px 20px;
+        background:#fff;
+        border-radius:20px;
+        padding:30px 25px;
+        text-align:center;
+        height:100%;
+        transition:.4s;
+        box-shadow:0 10px 30px rgba(0,0,0,.06);
+        border:1px solid #f5f5f5;
+    }
+
+    .choose-card:hover{
+        transform:translateY(-10px);
+        box-shadow:0 20px 40px rgba(255,122,0,.15);
     }
 
     .choose-icon{
-        width:65px;
-        height:65px;
+        width:80px;
+        height:80px;
+        margin:0 auto 20px;
+        border-radius:50%;
+        background:var(--orange-soft);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition:.4s;
     }
 
     .choose-icon i{
-        font-size:26px;
+        font-size:32px;
+        color:var(--orange);
+    }
+
+    .choose-card:hover .choose-icon{
+        background:var(--orange);
+    }
+
+    .choose-card:hover .choose-icon i{
+        color:#fff;
+    }
+
+    .choose-card h5{
+        font-weight:700;
+        margin-bottom:15px;
+    }
+
+    .choose-card p{
+        color:#666;
+        margin:0;
     }
 
     .stat-box{
-        padding:20px;
+        background:#fff;
+        border-radius:18px;
+        padding:25px;
+        box-shadow:0 10px 25px rgba(0,0,0,.05);
     }
 
     .stat-box h3{
-        font-size:1.6rem;
+        color:var(--orange);
+        font-size:2rem;
+        font-weight:800;
+        margin-bottom:5px;
     }
-}
+
+    .stat-box span{
+        color:#666;
+    }
+
+    /* Mobile */
+    @media(max-width:767px){
+
+        .choose-card{
+            padding:25px 20px;
+        }
+
+        .choose-icon{
+            width:65px;
+            height:65px;
+        }
+
+        .choose-icon i{
+            font-size:26px;
+        }
+
+        .stat-box{
+            padding:20px;
+        }
+
+        .stat-box h3{
+            font-size:1.6rem;
+        }
+    }
 </style>
-
-
-<!-- POPULAR SERVICES SWIPER -->
-<section class="bg-light">
-  <div class="container">
-    <div class="text-center">
-      <span class="eyebrow" data-aos="fade-up">Popular Services</span>
-      <h2 class="section-title" data-aos="fade-up">Most Booked This Month</h2>
-      <p class="section-sub" data-aos="fade-up">Trusted favorites — chosen by thousands of customers.</p>
-    </div>
-    <div class="swiper services-swiper" data-aos="fade-up">
-      <div class="swiper-wrapper pb-5">
-        <div class="swiper-slide"><div class="service-card"><div class="img" style="background-image:url(images/s1.jpg)"></div><div class="body"><h5>Deep Cleaning</h5><p class="text-muted small">Top-to-bottom intensive clean for every room.</p><div class="d-flex justify-content-between align-items-center"><span class="price">From $89</span><a href="booking.html" class="btn btn-sm btn-outline-orange">Book</a></div></div></div></div>
-        <div class="swiper-slide"><div class="service-card"><div class="img" style="background-image:url(images/s2.jpg)"></div><div class="body"><h5>Apartment Cleaning</h5><p class="text-muted small">Regular weekly or bi-weekly tidy and clean.</p><div class="d-flex justify-content-between align-items-center"><span class="price">From $59</span><a href="booking.html" class="btn btn-sm btn-outline-orange">Book</a></div></div></div></div>
-        <div class="swiper-slide"><div class="service-card"><div class="img" style="background-image:url(images/s3.jpg)"></div><div class="body"><h5>Commercial Cleaning</h5><p class="text-muted small">Offices, shops and facilities, on your schedule.</p><div class="d-flex justify-content-between align-items-center"><span class="price">From $149</span><a href="booking.html" class="btn btn-sm btn-outline-orange">Book</a></div></div></div></div>
-        <div class="swiper-slide"><div class="service-card"><div class="img" style="background-image:url(images/s4.jpg)"></div><div class="body"><h5>Carpet & Sofa</h5><p class="text-muted small">Steam-cleaning that lifts deep stains & odors.</p><div class="d-flex justify-content-between align-items-center"><span class="price">From $79</span><a href="booking.html" class="btn btn-sm btn-outline-orange">Book</a></div></div></div></div>
-        <div class="swiper-slide"><div class="service-card"><div class="img" style="background-image:url(images/s5.jpg)"></div><div class="body"><h5>Window Cleaning</h5><p class="text-muted small">Crystal-clear interior and exterior windows.</p><div class="d-flex justify-content-between align-items-center"><span class="price">From $69</span><a href="booking.html" class="btn btn-sm btn-outline-orange">Book</a></div></div></div></div>
-        <div class="swiper-slide"><div class="service-card"><div class="img" style="background-image:url(images/s6.jpg)"></div><div class="body"><h5>Move In / Move Out</h5><p class="text-muted small">Get your security deposit back, guaranteed.</p><div class="d-flex justify-content-between align-items-center"><span class="price">From $129</span><a href="booking.html" class="btn btn-sm btn-outline-orange">Book</a></div></div></div></div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY US -->
-<section>
-  <div class="container">
-    <div class="text-center">
-      <span class="eyebrow" data-aos="fade-up">Why Work Home Company</span>
-      <h2 class="section-title" data-aos="fade-up">Built on Trust & Quality</h2>
-      <p class="section-sub" data-aos="fade-up">Background-checked pros, transparent pricing, and a happiness guarantee.</p>
-    </div>
-    <div class="row g-4" data-aos="fade-up">
-      <div class="col-md-6 col-lg-3"><div class="why-card"><div class="icon"><i class="bi bi-shield-check"></i></div><h5>Vetted Pros</h5><p class="text-muted mb-0">Every cleaner is interviewed, trained and background-checked.</p></div></div>
-      <div class="col-md-6 col-lg-3"><div class="why-card"><div class="icon"><i class="bi bi-tree-fill"></i></div><h5>Eco Products</h5><p class="text-muted mb-0">Non-toxic, family-safe supplies brought to every visit.</p></div></div>
-      <div class="col-md-6 col-lg-3"><div class="why-card"><div class="icon"><i class="bi bi-currency-dollar"></i></div><h5>Flat Pricing</h5><p class="text-muted mb-0">No surprises. See the price before you book.</p></div></div>
-      <div class="col-md-6 col-lg-3"><div class="why-card"><div class="icon"><i class="bi bi-emoji-smile"></i></div><h5>100% Guarantee</h5><p class="text-muted mb-0">Not happy? We will re-clean for free.</p></div></div>
-    </div>
-  </div>
-</section>
+<!-- why Choose Us Section End -->
 
 <!-- TESTIMONIALS -->
 <section class="bg-light">
@@ -1032,7 +1034,7 @@
     <div class="cta" data-aos="fade-up">
       <h2>Ready for a Sparkling Clean Space?</h2>
       <p class="mb-4" data-aos="fade-up">Get a free instant quote in under a minute.</p>
-      <a href="booking.html" class="btn btn-light btn-lg fw-bold text-orange" data-aos="fade-up"><i class="bi bi-calendar2-check me-2"></i>Book Now</a>
+      <a href="booking.html" class="btn btn-light btn-lg fw-bold text-orange" data-aos="fade-up"><i class="bi bi-calendar2-check me-2"></i>Book For Cleaning</a>
     </div>
   </div>
 </section>
