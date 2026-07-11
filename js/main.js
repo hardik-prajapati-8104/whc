@@ -38,7 +38,7 @@ if (document.querySelector('.testi-swiper')) {
 
 // Highlight active mobile nav by page
 (function(){
-  const path = location.pathname.split('/').pop() || 'index.html';
+  const path = location.pathname.split('/').pop() || 'index.php';
   document.querySelectorAll('.mobile-nav a[data-page]').forEach(a => {
     if (a.dataset.page === path) a.classList.add('active');
   });

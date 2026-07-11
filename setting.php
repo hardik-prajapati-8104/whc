@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-    <link href="css/style.css" rel="stylesheet">
-    <title>Settings</title>
-
+<?php
+	include_once ('elements/header.php');  
+?>
+ 
     <style> 
             /* Hide on Desktop */
             @media(min-width:768px){
@@ -112,8 +105,6 @@
                 border-color: var(--orange);
             }
     </style>
-</head>
-<body>
 
     <div class="mobile-settings"> 
       
@@ -338,28 +329,6 @@
 
     </div>
 
-    <nav class="mobile-nav d-lg-none">
-        <a href="index.html" data-page="index.html"><i class="bi bi-house-door"></i><span>Home</span></a>
-        <a href="services.html" data-page="services.html"><i class="bi bi-grid"></i><span>Categories</span></a>
-        <a href="booking.html" class="book" data-page="booking.html"><i class="bi bi-calendar2-plus"></i><span>Book</span></a>
-        <a href="about.html" data-page="about.html"><i class="bi bi-info-circle"></i><span>About</span></a>
-        <a href="setting.html" data-page="setting.html"><i class="bi bi-gear"></i><span>Settings</span></a>
-    </nav>
-
-    <!-- Scroll To Top Button -->
-    <button id="scrollTopBtn" class="scroll-top-btn">
-        <i class="bi bi-arrow-up"></i>
-    </button>
-    
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> 
-<script>
-    AOS.init({
-        duration: 1000,
-        offset: 100,
-        once: true,
-        easing: 'ease-in-out'
-    });
-</script>
-<script src="js/main.js"></script>
-</body>
-</html>
+<?php
+	include_once ('elements/footer.php');
+?>

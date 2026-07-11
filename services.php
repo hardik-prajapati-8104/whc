@@ -1,39 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Services | SparkleCare Housekeeping</title>
-  <meta name="description" content="Deep cleaning, apartment cleaning, commercial cleaning, carpet, window and move-in/out services.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-custom sticky-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html"> 
-      Work<span>Home</span>Company
-    </a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" data-page="index.html" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" data-page="services.html" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" data-page="booking.html" href="booking.html">Booking</a></li>
-        <li class="nav-item"><a class="nav-link" data-page="about.html" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" data-page="contact.html" href="contact.html">Contact Us</a></li>
-        <li class="nav-item ms-lg-3"><a class="btn btn-orange" href="booking.html"><i class="bi bi-calendar2-check me-1"></i> Book Now</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<?php
+	include_once ('elements/header.php'); 
+?>
+ 
 
 <!-- header section -->
 <section class="page-header">
@@ -286,86 +254,6 @@
   </div>
 </section>
 
-<nav class="mobile-nav d-lg-none">
-  <a href="index.html" data-page="index.html"><i class="bi bi-house-door"></i><span>Home</span></a>
-  <a href="services.html" data-page="services.html"><i class="bi bi-grid"></i><span>Categories</span></a>
-  <a href="booking.html" class="book" data-page="booking.html"><i class="bi bi-calendar2-plus"></i><span>Book</span></a>
-  <a href="about.html" data-page="about.html"><i class="bi bi-info-circle"></i><span>About</span></a>
-  <a href="setting.html" data-page="setting.html"><i class="bi bi-gear"></i><span>Settings</span></a>
-</nav>
-
-<footer class="footer">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-4">
-        <div class="brand">Sparkle<span>Care</span></div>
-        <p class="mt-3">Premium housekeeping & cleaning services for homes and businesses. Trusted by 10,000+ happy customers.</p>
-        <div class="social mt-3">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-twitter-x"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-      <div class="col-6 col-lg-2">
-        <h6>Company</h6>
-        <ul class="list-unstyled">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-3">
-        <h6>Services</h6>
-        <ul class="list-unstyled">
-          <li><a href="services.html">Deep Cleaning</a></li>
-          <li><a href="services.html">Apartment Cleaning</a></li>
-          <li><a href="services.html">Commercial Cleaning</a></li>
-          <li><a href="services.html">Carpet & Sofa</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3">
-        <h6>Contact</h6>
-        <ul class="list-unstyled">
-          <li><i class="bi bi-geo-alt text-orange me-2"></i>22 Maple Street, NY 10001</li>
-          <li><i class="bi bi-telephone text-orange me-2"></i>(555) 234-7890</li>
-          <li><i class="bi bi-envelope text-orange me-2"></i>hello@sparklecare.com</li>
-        </ul>
-      </div>
-    </div>
-    <div class="copyright">© 2026 SparkleCare. All rights reserved.</div>
-  </div>
-</footer>
-
-<!-- Scroll To Top Button -->
-<button id="scrollTopBtn" class="scroll-top-btn">
-    <i class="bi bi-arrow-up"></i>
-</button>
-
-<script>
-    document.querySelectorAll('.service-filter').forEach(item => {
-        item.addEventListener('click', function() {
-            document.querySelectorAll('.service-filter')
-                .forEach(el => el.classList.remove('active'));
-
-            this.classList.add('active');
-        });
-    });
-</script>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> 
-<script>
-AOS.init({
-    duration: 1000,
-    offset: 100,
-    once: true,
-    easing: 'ease-in-out'
-});
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="js/main.js"></script>
-
-</body>
-</html>
+<?php
+  include_once ('elements/footer.php');
+?>

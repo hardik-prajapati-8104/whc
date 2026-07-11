@@ -1,184 +1,13 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Home — Professional Housekeeping | SparkleCare Housekeeping</title>
-  <meta name="description" content="Premium housekeeping __DESC__ cleaning services for homes and offices. Book trusted cleaners online in 60 seconds.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> 
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link href="css/style.css" rel="stylesheet">
- <style>
-    .swiper-pagination-bullet-active { 
-    background: var(--orange);
-}
- </style>
-</head>
-<body>
 
-<nav class="navbar navbar-expand-lg navbar-custom sticky-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html"> 
-      Work<span>Home</span>Company
-    </a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" data-page="index.html" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" data-page="services.html" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" data-page="booking.html" href="booking.html">Booking</a></li>
-        <li class="nav-item"><a class="nav-link" data-page="about.html" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" data-page="contact.html" href="contact.html">Contact Us</a></li>
-        <li class="nav-item ms-lg-3">
-          <a class="btn btn-orange" href="booking.html">
-            <i class="bi bi-calendar2-check me-1"></i> Book Now</a>
-        </li>
-        <li class="nav-item ms-lg-3 d-none">
-          <a class="btn btn-orange" href="login.html">
-            <i class="bi bi-box-arrow-in-right me-1"></i> Login</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<?php
+	include_once ('elements/header.php');
+    include_once ('elements/home-slider.php');
 
-<!-- HERO -->
-<section class="p-0" style="padding:0!important">
-
-    <div class="swiper hero-swiper">
-        <div class="swiper-wrapper">
-
-        <div class="swiper-slide hero-slide" style="background-image:url(images/hero1.jpg)">
-            <div class="hero-logo">
-                <img src="images/Work_home_sefty_solution-header.png" alt="Company Logo">
-            </div>
-        </div>
-
-        <div class="swiper-slide hero-slide" style="background-image:url(images/hero2.jpg)">
-            <div class="hero-logo">
-                <img src="images/Work_home_sefty_solution-header.png" alt="Company Logo">
-            </div>
-        </div>
-
-        <div class="swiper-slide hero-slide" style="background-image:url(images/hero3.jpg)">
-            <div class="hero-logo">
-                <img src="images/Work_home_sefty_solution-header.png" alt="Company Logo">
-            </div>
-        </div>
-
-    </div>
-    <style>
-        .hero-slide {
-            position: relative;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .hero-logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 60px;
-            height: 60px;
-            background: transparent;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 12px;
-            z-index: 10; 
-        }
-
-        .hero-logo img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            border-radius: 50%;
-        }
-    </style>
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <!-- Search bar overlay -->
-  <div class="container search-wrapper">
-    <form class="search-bar">
-
-        <div class="search-input">
-            <i class="bi bi-search"></i>
-            <input type="text"
-                   class="form-control"
-                   placeholder="Search Your Services">
-        </div>
-
-        <button type="submit" class="btn btn-orange search-btn">
-            <i class="bi bi-search"></i>
-            <!-- <span>Search</span> -->
-        </button>
-
-    </form>
-</div> 
-
-  <!-- Company Logo -->
-  <div class="container">
-      <div class="company-logo-section">
-          <img src="images/Work_home_sefty_solution-header.png" alt="Company Logo">
-          <h5>Work Home <span style="color: var(--orange);">Safety</span>Solution</h5>
-          <p>Protection & Safety Systems</p>
-      </div>
-  </div>
-  
-</section>
+?>
 
 <style>
-
-.company-logo-section{
-    text-align:center;
-    margin:25px 0 15px;
-}
-
-.company-logo-section img{
-    width:90px;
-    height:90px;
-    object-fit:contain;
-    background:#fff;
-    border-radius:50%;
-    padding:10px;
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
-    border:3px solid #ff7a00;
-}
-
-.company-logo-section h5{
-    margin-top:12px;
-    margin-bottom:4px;
-    font-weight:700;
-    color:#222;
-}
-
-.company-logo-section p{
-    margin:0;
-    color:#777;
-    font-size:14px;
-}
-
-@media(min-width:992px){
-
-    .company-logo-section{
-        margin:40px 0 25px;
-    }
-
-    .company-logo-section img{
-        width:120px;
-        height:120px;
-    }
-
-    .company-logo-section h5{
-        font-size:24px;
-    }
+.swiper-pagination-bullet-active { 
+    background: var(--orange);
 }
 </style>
 
@@ -288,154 +117,154 @@
 </section>
 
 <style>
-  
-/* Prevent Horizontal Scroll */
-/* body{
-    overflow-x:hidden;
-} */
+    
+    /* Prevent Horizontal Scroll */
+    /* body{
+        overflow-x:hidden;
+    } */
 
-.about-home{
-    background:#fff;
-    overflow:hidden;
-}
+    .about-home{
+        background:#fff;
+        overflow:hidden;
+    }
 
-.about-badge{
-    display:inline-block;
-    padding:8px 18px;
-    background:var(--orange-soft);
-    color:var(--orange);
-    border-radius:50px;
-    font-weight:600;
-    margin-bottom:15px;
-}
-
-.about-title{
-    font-size:clamp(2rem,4vw,3rem);
-    font-weight:800;
-    color:#222;
-    margin-bottom:15px;
-}
-
-.about-text{
-    color:#666;
-    line-height:1.8;
-}
-
-.about-img-wrapper{
-    position:relative;
-}
-
-.about-img{
-    width:100%;
-    border-radius:20px;
-    display:block;
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-}
-
-.experience-box{
-    position:absolute;
-    left:20px;
-    bottom:20px;
-    background:#fff;
-    padding:15px 20px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
-}
-
-.experience-box h3{
-    margin:0;
-    color:var(--orange);
-    font-weight:800;
-}
-
-.experience-box p{
-    margin:0;
-    font-size:14px;
-}
-
-.feature-box{
-    background:#fff8f2;
-    border-radius:12px;
-    padding:14px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.feature-box i{
-    color:var(--orange);
-    margin-right:8px;
-}
-
-.feature-box:hover{
-    background:var(--orange);
-    color:#fff;
-    transform:translateY(-4px);
-}
-
-.feature-box:hover i{
-    color:#fff;
-}
-
-.about-stats{
-    display:flex;
-    gap:25px;
-    flex-wrap:wrap;
-    margin-top:25px;
-}
-
-.stat-item h4{
-    color:var(--orange);
-    font-weight:800;
-    margin-bottom:4px;
-}
-
-.stat-item span{
-    color:#666;
-    font-size:14px;
-}
-
-.btn-orange{
-    background:var(--orange);
-    color:#fff;
-    border-radius:50px;
-    padding:12px 28px;
-    font-weight:600;
-    border:none;
-}
-
-.btn-orange:hover{
-    background:#e66d00;
-    color:#fff;
-}
-
-/* Mobile */
-@media (max-width:767px){
-
-    .about-home .container{
-        padding-left:15px;
-        padding-right:15px;
+    .about-badge{
+        display:inline-block;
+        padding:8px 18px;
+        background:var(--orange-soft);
+        color:var(--orange);
+        border-radius:50px;
+        font-weight:600;
+        margin-bottom:15px;
     }
 
     .about-title{
-        font-size:2rem;
+        font-size:clamp(2rem,4vw,3rem);
+        font-weight:800;
+        color:#222;
+        margin-bottom:15px;
+    }
+
+    .about-text{
+        color:#666;
+        line-height:1.8;
+    }
+
+    .about-img-wrapper{
+        position:relative;
+    }
+
+    .about-img{
+        width:100%;
+        border-radius:20px;
+        display:block;
+        box-shadow:0 15px 40px rgba(0,0,0,.08);
     }
 
     .experience-box{
-        left:10px;
-        bottom:10px;
-        padding:10px 15px;
+        position:absolute;
+        left:20px;
+        bottom:20px;
+        background:#fff;
+        padding:15px 20px;
+        border-radius:15px;
+        box-shadow:0 10px 25px rgba(0,0,0,.12);
+    }
+
+    .experience-box h3{
+        margin:0;
+        color:var(--orange);
+        font-weight:800;
+    }
+
+    .experience-box p{
+        margin:0;
+        font-size:14px;
+    }
+
+    .feature-box{
+        background:#fff8f2;
+        border-radius:12px;
+        padding:14px;
+        font-weight:600;
+        transition:.3s;
+    }
+
+    .feature-box i{
+        color:var(--orange);
+        margin-right:8px;
+    }
+
+    .feature-box:hover{
+        background:var(--orange);
+        color:#fff;
+        transform:translateY(-4px);
+    }
+
+    .feature-box:hover i{
+        color:#fff;
     }
 
     .about-stats{
-        justify-content:space-between;
-        gap:15px;
+        display:flex;
+        gap:25px;
+        flex-wrap:wrap;
+        margin-top:25px;
     }
 
-    .stat-item{
-        text-align:center;
-        flex:1;
+    .stat-item h4{
+        color:var(--orange);
+        font-weight:800;
+        margin-bottom:4px;
     }
-}
+
+    .stat-item span{
+        color:#666;
+        font-size:14px;
+    }
+
+    .btn-orange{
+        background:var(--orange);
+        color:#fff;
+        border-radius:50px;
+        padding:12px 28px;
+        font-weight:600;
+        border:none;
+    }
+
+    .btn-orange:hover{
+        background:#e66d00;
+        color:#fff;
+    }
+
+    /* Mobile */
+    @media (max-width:767px){
+
+        .about-home .container{
+            padding-left:15px;
+            padding-right:15px;
+        }
+
+        .about-title{
+            font-size:2rem;
+        }
+
+        .experience-box{
+            left:10px;
+            bottom:10px;
+            padding:10px 15px;
+        }
+
+        .about-stats{
+            justify-content:space-between;
+            gap:15px;
+        }
+
+        .stat-item{
+            text-align:center;
+            flex:1;
+        }
+    }
 </style>
  
 <!-- CATEGORIES -->
@@ -1060,144 +889,6 @@
   </div>
 </section>
 
-<nav class="mobile-nav d-lg-none">
-  <a href="index.html" data-page="index.html"><i class="bi bi-house-door"></i><span>Home</span></a>
-  <a href="services.html" data-page="services.html"><i class="bi bi-grid"></i><span>Categories</span></a>
-  <a href="booking.html" class="book" data-page="booking.html"><i class="bi bi-calendar2-plus"></i><span>Book</span></a>
-  <a href="about.html" data-page="about.html"><i class="bi bi-info-circle"></i><span>About</span></a>
-  <a href="setting.html" data-page="setting.html"><i class="bi bi-gear"></i><span>Settings</span></a>
-</nav>
-  
-<footer class="footer">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-4">
-        <div class="brand">Sparkle<span>Care</span></div>
-        <p class="mt-3">Premium housekeeping & cleaning services for homes and businesses. Trusted by 10,000+ happy customers.</p>
-        <div class="social mt-3">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-twitter-x"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-      <div class="col-6 col-lg-2">
-        <h6>Company</h6>
-        <ul class="list-unstyled">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-3">
-        <h6>Services</h6>
-        <ul class="list-unstyled">
-          <li><a href="services.html">Deep Cleaning</a></li>
-          <li><a href="services.html">Apartment Cleaning</a></li>
-          <li><a href="services.html">Commercial Cleaning</a></li>
-          <li><a href="services.html">Carpet & Sofa</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3">
-        <h6>Contact</h6>
-        <ul class="list-unstyled">
-          <li><i class="bi bi-geo-alt text-orange me-2"></i>22 Maple Street, NY 10001</li>
-          <li><i class="bi bi-telephone text-orange me-2"></i>(555) 234-7890</li>
-          <li><i class="bi bi-envelope text-orange me-2"></i>hello@sparklecare.com</li>
-        </ul>
-      </div>
-    </div>
-    <div class="copyright">© 2026 SparkleCare. All rights reserved.</div>
-  </div>
-</footer>
-
-<a href="https://wa.me/919173307640?text=Hello%20Work%20Home%20Safety%20Solution,%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20services.%20Please%20share%20the%20details.%0A%0AThank%20you."
-   target="_blank"
-   class="whatsapp-float"
-   aria-label="Chat on WhatsApp">
-    <i class="bi bi-whatsapp"></i>
-</a>
-
-<style>
-    .whatsapp-float{
-        position:fixed;
-        left:20px;
-        bottom:90px; /* above bottom nav on mobile */
-        width:60px;
-        height:60px;
-        background: var(--orange);
-        color:#fff;
-        border-radius:50%;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        font-size:30px;
-        text-decoration:none;
-        z-index:9999;
-        box-shadow:0 8px 25px rgba(255,122,0,.35);
-        transition:all .3s ease;
-        animation:whatsappPulse 2s infinite;
-    }
-
-    .whatsapp-float:hover{
-        color:#fff;
-        transform:translateY(-5px) scale(1.05);
-        box-shadow:0 12px 30px rgba(255,122,0,.45);
-    }
-
-    @keyframes whatsappPulse{
-        0%{
-            box-shadow:0 0 0 0 rgba(255,122,0,.5);
-        }
-        70%{
-            box-shadow:0 0 0 15px rgba(255,122,0,0);
-        }
-        100%{
-            box-shadow:0 0 0 0 rgba(255,122,0,0);
-        }
-    }
-
-    /* Desktop */
-    @media(min-width:768px){
-        .whatsapp-float{
-            width: 49px;
-            height: 49px;
-            font-size:32px;
-            right:25px;
-            bottom:25px;
-        }
-    }
-
-    /* Mobile */
-    @media(max-width:767.98px){
-        .whatsapp-float{
-            width: 50px;
-            height: 50px;
-            font-size: 20px;
-            right: 15px;
-            bottom: 85px; /* keeps clear of bottom navigation */
-        }
-    }
-</style>
-
-<!-- Scroll To Top Button -->
-<button id="scrollTopBtn" class="scroll-top-btn">
-    <i class="bi bi-arrow-up"></i>
-</button>
-  
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-    AOS.init({
-        duration: 1000,
-        offset: 100,
-        once: true,
-        easing: 'ease-in-out'
-    });
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="js/main.js"></script>
-
-</body>
-</html>
+<?php
+	include_once ('elements/footer.php');
+?>
